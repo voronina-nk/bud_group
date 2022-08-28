@@ -13910,14 +13910,14 @@ body {
   .header .row {
     justify-content: center;
   }
-  .header .col-md-8 {
-    display: none;
+  .header .menu,
+.header .toogle_menu {
+    display: flex;
   }
   .header .toogle_menu {
     position: absolute;
     top: 50px;
     left: 30px;
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 6px;
@@ -14012,6 +14012,24 @@ body {
   }
   .header .menu_active .overlay {
     opacity: 1;
+  }
+  .header .col-md-3 {
+    width: 700px;
+  }
+  .header .col-md-3 a {
+    display: flex;
+    justify-content: center;
+  }
+  .header .col-md-3 a img {
+    width: 147px;
+  }
+  .header .col-md-8 .navbar-nav {
+    position: absolute;
+    top: 40px;
+    right: 25px;
+  }
+  .header .col-md-8 .navbar-nav .nav-item {
+    display: none;
   }
 }
 .about__grid {

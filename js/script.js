@@ -62,7 +62,7 @@ $(document).ready(function () {
         breakpoint: 991,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           adaptiveHeight: true
         }
       },
@@ -70,7 +70,7 @@ $(document).ready(function () {
         breakpoint: 767,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           adaptiveHeight: true
         }
       },
