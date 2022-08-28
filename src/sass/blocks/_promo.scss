@@ -1,0 +1,141 @@
+.promo {
+    position: relative;
+
+    &__container {
+        height: 100%;
+    }
+
+    &__slider {
+        background: url(../../img/promo/promo-bg.jpg) no-repeat center center / cover;
+    }
+
+    &__carousel {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .carousel__item {
+        height: calc(100vh - 120px);
+
+
+        img {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    &__slider-dots {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            color: #fff;
+            gap: 30px;
+            padding: 0;
+
+            li {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    display: block;
+                    cursor: pointer;
+                }
+
+                &:after {
+                    content: '';
+                    display: block;
+                    height: 0;
+                    width: 1px;
+                    background: #fff;
+                    margin: 0 auto;
+                    transition: all 0.3s;
+
+
+                }
+
+                &.slick-active {
+                    gap: 30px;
+
+                    &:after {
+                        height: 64px;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    &__wrapper {
+        /*         position: absolute;
+        display: block;
+        top: 300px;
+        left: 50%;
+        transform: translateX(-50%); */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        max-width: 770px;
+        margin: 0 auto;
+
+        img {
+            margin-top: 24px;
+        }
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .promo {
+        &__slider-dots {
+            display: none;
+        }
+
+        &__wrapper {
+            h1 {
+                font-size: 50px;
+                text-align: center;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 767px) {
+
+    .promo {
+        &__wrapper {
+            h1 {
+                font-size: 30px;
+ 
+            }
+        }
+
+    }
+}
+
+@media (max-width: 575px) {
+
+    .promo {
+        &__wrapper {
+            width: 300px;
+            h1 {
+                font-size: 22px;
+
+            }
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,37 @@
+.footer {
+    min-height: 120px;
+    background-color: $main_color;
+    margin: 0;
+    padding-top: 35px;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(5, 200px);
+        gap: 65px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: center;
+
+        p {
+            margin: 4px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+
+            color: #FFFFFF;
+        }
+    }
+
+    .phone__number {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+}

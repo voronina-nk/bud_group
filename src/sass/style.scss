@@ -1,0 +1,21 @@
+// @import 'libs/bootstrap-reboot.min';
+// @import "libs/bootstrap-grid.min";
+@import "libs/bootstrap.min";
+@import "libs/slick";
+@import "libs/animate.min";
+
+
+@import "base/mixins";
+@import "base/variables";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet');
+
+@import "blocks/general";
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/about";
+@import "blocks/works";
+@import "blocks/services";
+@import "blocks/partners";
+@import "blocks/map";
+@import "blocks/footer";
