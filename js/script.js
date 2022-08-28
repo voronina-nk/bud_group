@@ -1,5 +1,22 @@
+let toogleMenu = document.querySelector('.toogle_menu');
+let menu = document.querySelector('.menu');
+let closeMenu = document.querySelector('.menu__close');
+let overlay = document.querySelector('.overlay');
 
+toogleMenu.addEventListener('click', function() {
+    menu.classList.add('menu_active');
+    document.body.style.overflow = 'hidden';
+});
 
+closeMenu.addEventListener('click', function() {
+    menu.classList.remove('menu_active');
+    document.body.style.overflow = '';
+});
+
+overlay.addEventListener('click', function() {
+  menu.classList.remove('menu_active');
+  document.body.style.overflow = '';
+});
 
 $(document).ready(function () {
   $('.promo__carousel').slick({
@@ -43,6 +60,22 @@ $(document).ready(function () {
     responsive: [
       {
         breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          adaptiveHeight: true
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          adaptiveHeight: true
+        }
+      },
+      {
+        breakpoint: 575,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
