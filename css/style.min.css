@@ -13774,7 +13774,7 @@ body {
   height: 100%;
 }
 .promo__slider {
-  background: url(../../img/promo/promo-bg.jpg) no-repeat center center/cover;
+  background: url(../img/promo/promo-bg.jpg) no-repeat center center/cover;
 }
 .promo__carousel {
   max-width: 100%;
