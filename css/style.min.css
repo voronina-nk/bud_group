@@ -14873,6 +14873,7 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
+  white-space: nowrap;
 }
 .footer .phone__number {
   display: flex;
