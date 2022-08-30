@@ -95,6 +95,10 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function() {
+  $('.carousel__item a').magnificPopup({type:'image'});
+});
+
 $(document).ready(function () {
   $('.partners__carousel').slick({
     // infinite: false,
