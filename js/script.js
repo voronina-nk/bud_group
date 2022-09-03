@@ -139,3 +139,22 @@ $(document).ready(function () {
   });
 });
 
+$(window).scroll(function (){
+  if($(this).scrollTop() >500 ) {
+    $('#scroll-top').fadeIn('slow');
+  } else {
+    $('#scroll-top').fadeOut('slow');
+  }
+})
+
+$("#scroll-top").on('click', function () {
+  scrollToTop();
+});
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
+};
+
