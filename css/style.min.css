@@ -14124,6 +14124,26 @@ body {
   margin: 0 auto;
 }
 
+.btn-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: 0 0;
+  border: none;
+  display: none;
+  background: #E41D37;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.btn-top svg {
+  width: 23px;
+  color: #fff;
+}
+
 .title__fz64 {
   font-weight: 400;
   font-size: 64px;
