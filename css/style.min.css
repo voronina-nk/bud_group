@@ -14878,12 +14878,11 @@ body {
 }
 .footer__column {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-content: center;
+  align-items: center;
+  gap: 0 5px;
 }
 .footer__column p {
-  margin: 4px;
+  margin: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
