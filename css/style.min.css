@@ -14722,11 +14722,10 @@ body {
   gap: 95px;
 }
 .map-form {
-  width: 445px;
-  height: 750px;
+  max-width: 445px;
   background: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  padding: 23px 38px;
+  padding: 23px 38px 42px;
 }
 .map-form p {
   font-size: 14px;
@@ -14735,12 +14734,17 @@ body {
   color: #606062;
   margin: 15px 30px 50px;
 }
-.map-form p a {
+.map-form .politics {
+  font-size: 14px;
+  line-height: 17px;
+  color: #606062;
+}
+.map-form .politics a {
   text-decoration: none;
   color: #606062;
   font-weight: bold;
 }
-.map-form p a:hover {
+.map-form .politics a:hover {
   text-decoration: underline;
 }
 .map .form-group {
@@ -14751,12 +14755,18 @@ body {
   margin-bottom: 31px;
   height: 50px;
   padding: 5px 18px;
+  border: solid 1px #606062;
+  font-size: 14px;
+  line-height: 17px;
 }
 .map .form-group textarea {
   width: 100%;
   height: 135px;
   margin-bottom: 37px;
   padding: 5px 18px;
+  border: solid 1px #606062;
+  font-size: 14px;
+  line-height: 17px;
 }
 .map__address {
   width: 410px;
@@ -14773,6 +14783,10 @@ body {
 #map {
   height: 798px;
   max-width: 100%;
+}
+
+.text-left {
+  text-align: left !important;
 }
 
 @media (max-width: 991px) {
@@ -14807,9 +14821,7 @@ body {
     gap: 35px;
   }
   .map-form {
-    width: 290px;
-    height: 600px;
-    padding: 15px 25px;
+    padding: 15px 25px 25px;
     position: static;
     display: block;
     top: 20px;
@@ -14838,6 +14850,9 @@ body {
     gap: 110px;
     margin-top: -150px;
     padding-bottom: 30px;
+  }
+  .map-form {
+    width: 90%;
   }
   #map {
     height: 327px;
