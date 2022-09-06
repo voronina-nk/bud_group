@@ -14433,7 +14433,7 @@ body {
     width: 345px;
     max-width: 100%;
     background: #E41D37;
-    z-index: 1000;
+    z-index: 9999 !important;
     padding: 100px 36px 50px;
     display: flex;
     flex-direction: column;
@@ -14553,6 +14553,7 @@ body {
 }
 .works__carousel {
   width: 100%;
+  z-index: -1;
 }
 .works__carousel .carousel__item {
   justify-content: center;
@@ -14594,7 +14595,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 1;
+  z-index: 0;
   left: -5px;
   right: auto;
 }
