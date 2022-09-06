@@ -14362,7 +14362,7 @@ body {
           text-decoration-line: underline;
 }
 .header .navbar-nav a.active {
-  color: yellow;
+  color: #D9D9D9;
 }
 
 @media (max-width: 1199px) {

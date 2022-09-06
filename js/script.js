@@ -158,3 +158,16 @@ function scrollToTop() {
   })
 };
 
+let link = document.querySelectorAll('.nav-link')
+link.forEach((item, itemindex) =>
+  item.addEventListener('click', () => {
+    let section = document.querySelectorAll('.section')
+    section.forEach((section, sectionindex) => {
+      console.log(section.getBoundingClientRect().top)
+      if (itemindex === sectionindex) {
+        const height =
+          section.getBoundingClientRect().top + window.pageYOffset - 78
+        window.scrollTo({ top: height, behavior: 'smooth' })
+      }
+    })
+  }))
